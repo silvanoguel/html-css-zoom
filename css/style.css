@@ -28,10 +28,10 @@ img {
 .col {
     display: flex;
     width: calc(100% / 7);
-    padding: 10px;
+
     /* debug */
     /* background-color: aqua; */
-    border: 7px solid black;
+    border: 2px solid black;
 }
 
 .flex {
@@ -39,11 +39,21 @@ img {
     flex-wrap: wrap;
 }
 
+
+.name {
+    position: absolute;
+    color:white;
+    bottom:20px;
+    left: 0px;
+    background-color: rgba(128, 128, 128, 0.54);
+}
+
+
 .actions {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
     /* debug */
     background-color: rgb(46, 44, 44);
@@ -52,14 +62,23 @@ img {
 .participants {
     top: 0;
     left: 0;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     background-color: black;
 }
 
 .card {
+    position: relative;
     margin-top: 40px;
 }
 
 .card img {
     width:300px;
+}
+
+.actions-left {
+    display: flex;
+}
+
+.actions-left li {
+    color: white;
 }
